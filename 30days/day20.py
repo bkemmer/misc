@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/bin/python3gi
 #bubble sort
 import sys
 #import pdb; pdb.set_trace()
