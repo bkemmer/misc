@@ -1,0 +1,11 @@
+mealCost = float(input().strip())
+tipPercent = int(input().strip())
+taxPercent = int(input().strip())
+#total = mealCost*(1+tipPercent/100.0)*(1+taxPercent/100.0)
+tip = mealCost*(tipPercent/100.0)
+tax = mealCost*(taxPercent/100.0)
+total = mealCost + tip + tax
+print(total)
+total = int(round(total,0))
+print(total)
+print("The total meal cost is "+str(int(total))+" dollars.")

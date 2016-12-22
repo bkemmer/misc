@@ -1,7 +1,7 @@
-#!/bin/python3gi
+#!/bin/python3
 #bubble sort
 import sys
-#import pdb; pdb.set_trace()
+# import pdb; pdb.set_trace()
 
 n = int(input().strip())
 a = [int(a_temp) for a_temp in input().strip().split(' ')]
