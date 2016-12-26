@@ -1,0 +1,11 @@
+Global-mean monthly, seasonal, and annual means, 1880-present, updated through most recent month: TXT, CSV
+http://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.csv
+
+Northern Hemisphere-mean monthly, seasonal, and annual means, 1880-present, updated through most recent month: TXT, CSV
+http://data.giss.nasa.gov/gistemp/tabledata_v3/NH.Ts+dSST.csv
+
+Southern Hemisphere-mean monthly, seasonal, and annual means, 1880-present, updated through most recent month: TXT, CSV
+http://data.giss.nasa.gov/gistemp/tabledata_v3/SH.Ts+dSST.csv
+
+Zonal annual means, 1880-present, updated through most recent complete year: TXT, CSV
+http://data.giss.nasa.gov/gistemp/tabledata_v3/ZonAnn.Ts+dSST.csv
