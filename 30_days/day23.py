@@ -17,30 +17,23 @@ class Solution:
                 root.right=cur
         return root
 
-    def getHeight(self,root):
-        right_height = 0
-        left_height = 0
-        if root==None:
-            return -1
-        right_height = self.getHeight(root.right)
-        left_height = self.getHeight(root.left)
-
-        return max(right_height,left_height) + 1
-
-    def enqueue(self,cur,queue):
-        if cur.left != None: queue.append(cur.left.data)
-        if cur.right != None: queue.append(cur.right.data)
+    def enqueue(self,cur,qNode,qData):
+        if(cur!=None):
+            qNode.append(cur)
+            qData.append(cur.data)
 
     def levelOrder(self,root):
-        queue = []
-        queue.append(root.data)
-        height = self.getHeight(root)
+        qNode = []
+        qData = []
+
         cur = root
-        for i in range(height-3):
-            self.enqueue(cur,queue)
-            self.enqueue(cur.left,queue)
-            self.enqueue(cur.right,queue)
-        for q in queue:
+        self.enqueue(cur,qNode,qData)
+        while(len(qNode)>0):
+            cur = qNode.pop(0)
+            self.enqueue(cur.left,qNode,qData)
+            self.enqueue(cur.right,qNode,qData)
+
+        for q in qData:
             print(q, end=' ')
 T=int(input())
 myTree=Solution()
