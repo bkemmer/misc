@@ -1,19 +1,13 @@
 def checkPrime(p):
-    odds = []
-    odds.append(2)
-    for n in range(1,int((p-1)/2)+1):
-        odds.append(2*n+1)
-    try:
-        odds.remove(p)
-    except:
-        pass
-    #print(odds)
-    if(p==1):
+    #print(p)
+    if ((p==1) or (p%2==0)):
         print("Not prime")
         return
-    for o in odds:
-        if p%o == 0 :
-            print("Not prime")
+
+    for n in range(1,int((p-1)/2)+1):
+        aux = (2*n+1)
+        if (p%aux == 0) & (p!=aux) :
+            print("Not prime p=",p,"aux=",aux)
             return
     print("Prime")
 T = int(input().strip())
